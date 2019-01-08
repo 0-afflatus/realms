@@ -1,0 +1,204 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Players",
+        "permissions": [
+            [
+                "add_realm",
+                "realms",
+                "realm"
+            ],
+            [
+                "change_realm",
+                "realms",
+                "realm"
+            ]
+        ]
+    },
+    "pk": 1
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$aq9SK13eqlPe$0ME9eChk8ETELlkCtvFz+oNkpRqlYPsbsyl27F3Mevw=",
+        "last_login": "2017-11-30T23:17:14.480Z",
+        "is_superuser": true,
+        "username": "tim",
+        "first_name": "Tim",
+        "last_name": "",
+        "email": "tim@timhawthorn.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-11-26T20:34:32Z",
+        "groups": [
+            [
+                "Players"
+            ]
+        ],
+        "user_permissions": []
+    },
+    "pk": 1
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$J7uNRpMA3oRx$nb5Z0EKCnV2q1WVEAsUxFJ+BHO7zt74paFf3CWQV2Cs=",
+        "last_login": "2017-11-29T18:52:12.177Z",
+        "is_superuser": false,
+        "username": "max",
+        "first_name": "Max",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-28T22:51:33Z",
+        "groups": [
+            [
+                "Players"
+            ]
+        ],
+        "user_permissions": []
+    },
+    "pk": 2
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$xBGIICtcuoed$PYpJk1+xLBxJr7wcHblDwwUIWtzUcGDwZ5MxKJrEGM0=",
+        "last_login": "2017-11-29T21:54:33.842Z",
+        "is_superuser": false,
+        "username": "lyla",
+        "first_name": "Lyla",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-28T22:52:05Z",
+        "groups": [
+            [
+                "Players"
+            ]
+        ],
+        "user_permissions": []
+    },
+    "pk": 3
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$Dtep8TIRXnmE$BFrEui2dE9VjgpiiVslkr0/uRvpykYKhMrRAfM8Mkmc=",
+        "last_login": "2017-11-29T21:56:22.386Z",
+        "is_superuser": false,
+        "username": "Xingta",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-29T21:19:01.680Z",
+        "groups": [],
+        "user_permissions": []
+    },
+    "pk": 5
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Imaginary",
+        "author": 1,
+        "created_date": "2017-11-30T16:09:52Z",
+        "realm_slug": "imaginary",
+        "description": "A really really cool realm",
+        "rule_set": "D&D",
+        "genre": "fantasy",
+        "tech_level": 3,
+        "magic_level": 9,
+        "brief_img": "./glysa-base.png",
+        "wallpaper": "./lehez_baran3.png"
+    },
+    "pk": 1
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "My Cool Realm",
+        "author": 1,
+        "created_date": "2017-11-30T16:08:52Z",
+        "realm_slug": "my_cool_realm",
+        "description": "A really really cool realm",
+        "rule_set": "GURPS",
+        "genre": "steampunk",
+        "tech_level": 6,
+        "magic_level": 5,
+        "brief_img": "./glysa-base.png",
+        "wallpaper": "./lehez_baran3.png"
+    },
+    "pk": 2
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Deliberately ?&+-%/*@|:~ing broken",
+        "author": 5,
+        "created_date": "2018-11-23T23:23:23Z",
+        "realm_slug": "Deliberately ?&+-%/*@|:~ing broken",
+        "description": "Deliberately ?&+-%/*@|:~ing broken",
+        "rule_set": "Deliberately ?&+-%/*@|:~ing broken",
+        "genre": "Deliberately ?&+-%/*@|:~ing broken",
+        "tech_level": 0,
+        "magic_level": 13,
+        "brief_img": "broken.png",
+        "wallpaper": "./broken.svg"
+    },
+    "pk": 23
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Markdown Example",
+        "author": 1,
+        "created_date": "2017-12-03T16:15:53.021Z",
+        "realm_slug": "example",
+        "description": "# H1\r\n## H2\r\n### H3\r\n#### H4\r\n##### H5\r\n###### H6\r\n\r\nAlternatively, for H1 and H2, you can use an underline-ish style:\r\n\r\nAlt-H1\r\n======\r\n\r\nAlt-H2\r\n------\r\nEmphasis, aka italics, with *asterisks* or _underscores_.\r\n\r\nStrong emphasis, aka bold, with **asterisks** or __underscores__.\r\n\r\nCombined emphasis with **asterisks and _underscores_**.\r\n\r\n1. First ordered list item\r\n2. Another item\r\n1. Actual numbers don't matter, just that it's a number\r\n4. And another item.\r\n\r\n   To have a line break without a paragraph, you will need to use two trailing spaces.  \r\n   Note that this line is separate, but within the same paragraph.\r\n\r\n* Unordered list can use asterisks\r\n- Or minuses\r\n+ Or pluses\r\n\r\n[I'm an inline-style link](https://www.google.com)\r\n\r\n[I'm an inline-style link with title](https://www.google.com \"Google's Homepage\")\r\n\r\n[I'm a reference-style link][Arbitrary case-insensitive reference text]\r\n\r\n[I'm a relative reference to a repository file](../blob/master/LICENSE)\r\n\r\n[You can use numbers for reference-style link definitions][1]\r\n\r\nOr leave it empty and use the [link text itself].\r\n\r\nURLs and URLs in angle brackets will automatically get turned into links. \r\n<http: www.example.com=\"\">.\r\n\r\nSome text to show that the reference links can follow later.\r\n\r\n[arbitrary case-insensitive reference text]: https://www.mozilla.org\r\n[1]: http://slashdot.org\r\n[link text itself]: http://www.reddit.com\r\n\r\nHere's our logo (hover to see the title text):\r\n\r\nInline-style: \r\n![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png \"Logo Title Text 1\")\r\n\r\nReference-style: \r\n![alt text][logo]\r\n\r\n[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png \"Logo Title Text 2\"\r\n\r\nInline `code` has `back-ticks around` it.\r\n\r\n```\r\nvar s = \"JavaScript syntax highlighting\";\r\nalert(s);\r\n```\r\n \r\n```\r\nBut let's throw in a <b>tag</b>.\r\n```\r\n> Blockquotes are very handy in email to emulate reply text.\r\n> This line is part of the same quote.\r\n\r\nQuote break.\r\n\r\n> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. \r\n\r\nYou can also use raw HTML in your Markdown, and it'll mostly work pretty well.\r\n\r\n<dl>\r\n  <dt>Definition list</dt>\r\n  <dd>Is something people use sometimes.</dd>\r\n\r\n  <dt>Markdown in HTML</dt>\r\n  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>\r\n</dl>\r\n\r\nThree or more...\r\n\r\n---\r\n\r\nHyphens\r\n\r\n***\r\n\r\nAsterisks\r\n\r\n___\r\n\r\nUnderscores\r\n\r\n",
+        "brief_text": "",
+        "rule_set": "Markdown",
+        "genre": "Text formatting code",
+        "tech_level": 9,
+        "magic_level": 3,
+        "brief_img": "",
+        "wallpaper": ""
+    },
+    "pk": 6
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Grail Test",
+        "author": 1,
+        "created_date": "2017-12-14T18:43:06.191Z",
+        "realm_slug": "grailtest",
+        "description": "<br /><em>Recent map of the Grail Test server (click for full map)</em>\r\n\r\n<p>Grail Test is a game about placing and digging blocks in a randomly generated 3D world reminiscent of Medieval Europe.</p>\r\n\r\n<p class=\"quote left\"><q>The theme of the Grail is the bringing of life into what is known as the wasteland.</q> ~ Joseph Campbell. </p>\r\n\r\n![](/media/markdownx/8deada25-21db-4cbc-9fd8-d10a0d7eb573.png)\r\n\r\n<p>Grail Test is Open Source, Free Software. You can install it on your computer by following the instructions <a href=\"installing.html\">here</a>.</p>\r\n\r\n<p>Alternatively you can play the <a href=\"server.html\">Online version</a>, which works best using an official minetest client on a PC, but the game is also accessible using Multicraft II on hand-held devices (with some limitations).</p>\r\n\r\n<p class=\"clear\">&nbsp;</p>\r\n\r\n<p class=\"quote left\"><q>It begins with the king as a boy, having to spend the night alone in the forest to prove his courage so he can become king. Now while he is spending the night alone he's visited by a sacred vision. Out of the fire appears the Holy Grail, symbol of God's divine grace. And a voice said to the boy, 'You shall be keeper of the grail so that it may heal the hearts of men.' But the boy was blinded by greater visions of a life filled with power and glory and beauty. And in this state of radical amazement he felt for a brief moment not like a boy, but invincible, like God, so he reached into the fire to take the grail, and the grail vanished, leaving him with his hand in the fire to be terribly wounded. Now as this boy grew older, his wound grew deeper. Until one day, life for him lost its reason. He had no faith in any man, not even himself. He couldn't love or feel loved. He was sick with experience. He began to die. One day a fool wandered into the castle and found the king alone. And being a fool, he was simple minded, he didn't see a king. He only saw a man alone and in pain. And he asked the king, 'What ails you friend?' The king replied, 'I'm thirsty. I need some water to cool my throat'. So the fool took a cup from beside his bed, filled it with water and handed it to the king. As the king began to drink, he realized his wound was healed. He looked in his hands and there was the holy grail, that which he sought all of his life. And he turned to the fool and said with amazement, 'How can you find that which my brightest and bravest could not?' And the fool replied, 'I don't know. I only knew that you were thirsty.' It's very beautiful, isn't it?</q> ~ Parry, The Fisher King.</p>\r\n\r\n![](/media/markdownx/2a0e930e-1969-494a-adf0-6c73ecb02560.png)\r\n\r\n![](/media/markdownx/bec2242c-116c-4bb2-81f8-d043e59d4280.png)\r\n\r\n<p class=\"clear\">&nbsp;</p>\r\n\r\n![](/media/markdownx/1ef72813-5787-4b0c-a15c-5b2b4c386b37.png)\r\n\r\n![](/media/markdownx/fb8e9cdd-3f58-43b2-ab10-18b8aab6fa40.png)\r\n\r\n<p class=\"clear\">&nbsp;</p>",
+        "brief_text": "Grail Test is a game about placing and digging blocks in a randomly generated 3D world reminiscent of Medieval Europe. ",
+        "rule_set": "Minetest",
+        "genre": "Medieval Fantasy",
+        "tech_level": 4,
+        "magic_level": 8,
+        "brief_img": "uploads/avalonia7_0iZewZv.png",
+        "wallpaper": "uploads/bramblehaven_south.png"
+    },
+    "pk": 7
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Installing",
+        "author": 1,
+        "created_date": "2017-12-14T18:51:26.490Z",
+        "page_slug": "installing",
+        "realm_slug": "grailtest",
+        "description": "<h2>\r\n<a id=\"user-content-installing\" class=\"anchor\" href=\"#installing\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Installing</h2>\r\n\r\n<p>If you've never done this before ...</p>\r\n\r\n<ol class=\"task-list\">\r\n<li>\r\n<p>Install minetest game engine</p>\r\n\r\n<p>Game engine (minetest) download: <a href=\"http://minetest.net/download\">http://minetest.net/download</a>\r\n    or <a href=\"https://github.com/minetest/minetest/\">https://github.com/minetest/minetest/</a></p>\r\n\r\n<p>Help for Windows users: <a href=\"http://wiki.minetest.net/Getting_Started#Windows\">http://wiki.minetest.net/Getting_Started#Windows</a></p>\r\n</li>\r\n<li>\r\n<p>Download grailtest</p>\r\n\r\n<p>grailtest download: <a href=\"https://github.com/0-afflatus/grailtest/archive/v0.4.0.zip\">https://github.com/0-afflatus/grailtest/archive/v0.4.0.zip</a></p>\r\n</li>\r\n<li><p>Copy .zip into  ~/.minetest/games/\r\n~ is the folder you installed minetest into, probably your home folder.</p></li>\r\n<li><p>Extract .zip and rename to grailtest</p></li>\r\n<li>\r\n<p>Fire up minetest, click on the grail icon at the bottom of the window.</p>\r\n\r\n<ol class=\"task-list\">\r\n<li>   Click 'New'</li>\r\n<li>   Give your world a name</li>\r\n<li> Choose Mapgen (v7 recommended)</li>\r\n<li> Check that Game is set to grailtest</li>\r\n<li> Click 'Create'</li>\r\n</ol>\r\n</li>\r\n<li><p>Back at the opening dialog Select World and click 'Play'</p></li>\r\n</ol>\r\n\r\n<p>Alternatively, come and play on the <a href=\"server.html\">online version</a>, which only requires the minetest client*. Neat huh?</p>\r\n\r\n<p>* It is playable on Multicraft II for hand-held devices but not fully supported.</p>\r\n\r\n<p>The rest of this page is a bit technical. Skip to <a href=\"playguide.html\">Player Guide</a> if you just want to get on and play.</p>\r\n\r\n<p>Further information:\r\n<a href=\"https://forum.minetest.net/viewtopic.php?f=50&amp;t=10941\">https://forum.minetest.net/viewtopic.php?f=50&amp;t=10941</a></p>\r\n\r\n<h2>\r\n<a id=\"user-content-compatibility\" class=\"anchor\" href=\"#compatibility\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Compatibility</h2>\r\n\r\n<p>The grailtest github master HEAD is generally compatible with the latest development version of minetest.</p>\r\n\r\n<p>This version requires minetest 0.4.14.</p>\r\n\r\n<h2>\r\n<a id=\"user-content-compatible-mods\" class=\"anchor\" href=\"#compatible-mods\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Compatible mods:</h2>\r\n\r\n<p>Mods that are known to work, albeit with limited support:</p>\r\n\r\n<p>Recommended:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>Mobs Redo by TenPlus1, based on PilzAdam's Simple Mobs. <a href=\"https://github.com/tenplus1/mobs\">https://github.com/tenplus1/mobs</a>\r\n</li>\r\n<li>areas</li>\r\n<li>chatplus</li>\r\n<li>explore_map</li>\r\n<li>mapfix</li>\r\n<li>markers</li>\r\n<li>names_per_ip</li>\r\n<li>no_bad_names</li>\r\n<li>player_textures</li>\r\n<li>sedimentology</li>\r\n<li>unified_inventory</li>\r\n<li>world_edit</li>\r\n</ul>\r\n\r\n<p>Also compatible-ish:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>3d_armor</li>\r\n<li>farming_plus</li>\r\n<li>inventory_plus</li>\r\n<li>simple_skins</li>\r\n</ul>\r\n\r\n<p>Mods designed for other games may not work as expected.</p>"
+    },
+    "pk": 12
+}
+]

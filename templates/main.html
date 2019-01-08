@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maginaria Index</title>
+  <link rel="stylesheet" href="{% static 'maginary.css' %}">
+  <link rel="shortcut icon" href="/static/icons/logo.png" type="image/x-icon">
+</head>
+
+{% if realm.wallpaper %}
+<body style="background-image: url('/media/{{ realm.wallpaper }}');">
+{% else %}
+<body style="background-image: url('/static/images/whispering_hills.png');">
+{% endif %}
+  <header>
+	<div id="hlogo">
+        <a href="/"><h1>M<span id="head_decor">aginaria</span></h1></a>
+    </div>
+	<nav>
+      <ul>
+        {% if user.is_authenticated %}
+            <li><img class="mark" src="/static/icons/stock_person.svg">{{ user.get_username }}
+            <ul>
+                <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+            </ul>
+            </li>   
+        {% else %}
+            <li><a href="{% url 'login'%}?next={{request.path}}">Login</a>
+            <ul>
+                <li><a href="/">Join Up</a></li>
+            </ul>
+            </li>   
+        {% endif %}
+	  </ul>
+    </nav>
+  </header>
+  
+  <div id="page_content">
+	{% block content %}
+	{% endblock %}
+  </div>
+  
+  <footer>
+	<span id="strap">... because it's all a story ... </span><br />
+    <span id="copyr">Maginaria design &copy; timhawthorn 2017</span>
+  </footer>
+  
+</body>
+</html>

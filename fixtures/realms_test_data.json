@@ -1,0 +1,1415 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    },
+    "pk": 1
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    },
+    "pk": 2
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    },
+    "pk": 3
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    },
+    "pk": 4
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    },
+    "pk": 5
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    },
+    "pk": 6
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "blog",
+        "model": "post"
+    },
+    "pk": 7
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "frontpage",
+        "model": "new_realm"
+    },
+    "pk": 8
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "realms",
+        "model": "realm"
+    },
+    "pk": 10
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "realms",
+        "model": "page"
+    },
+    "pk": 11
+},
+{
+    "model": "sessions.session",
+    "fields": {
+        "session_data": "ZTYyNDMxZGEwYmVmMTQyYjBkYmEyY2I1ZTQwNDVkYmEwZTM3ZWFiNzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyODdjOWM5ZWU2YWIwZTdiZDZlZmI2MWQyMjE2MDliMzEwMWI1Zjk3In0=",
+        "expire_date": "2017-12-28T17:51:50.874Z"
+    },
+    "pk": "nx3sictmkego6z62olu5awyyoivih7pn"
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    },
+    "pk": 1
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    },
+    "pk": 2
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    },
+    "pk": 3
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    },
+    "pk": 4
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    },
+    "pk": 5
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    },
+    "pk": 6
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    },
+    "pk": 7
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    },
+    "pk": 8
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    },
+    "pk": 9
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    },
+    "pk": 10
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    },
+    "pk": 11
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    },
+    "pk": 12
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    },
+    "pk": 13
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    },
+    "pk": 14
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    },
+    "pk": 15
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    },
+    "pk": 16
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    },
+    "pk": 17
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    },
+    "pk": 18
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add post",
+        "content_type": 7,
+        "codename": "add_post"
+    },
+    "pk": 19
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change post",
+        "content_type": 7,
+        "codename": "change_post"
+    },
+    "pk": 20
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 7,
+        "codename": "delete_post"
+    },
+    "pk": 21
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add new_ realm",
+        "content_type": 8,
+        "codename": "add_new_realm"
+    },
+    "pk": 22
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change new_ realm",
+        "content_type": 8,
+        "codename": "change_new_realm"
+    },
+    "pk": 23
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete new_ realm",
+        "content_type": 8,
+        "codename": "delete_new_realm"
+    },
+    "pk": 24
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add realm",
+        "content_type": 10,
+        "codename": "add_realm"
+    },
+    "pk": 28
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change realm",
+        "content_type": 10,
+        "codename": "change_realm"
+    },
+    "pk": 29
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete realm",
+        "content_type": 10,
+        "codename": "delete_realm"
+    },
+    "pk": 30
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add page",
+        "content_type": 11,
+        "codename": "add_page"
+    },
+    "pk": 31
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change page",
+        "content_type": 11,
+        "codename": "change_page"
+    },
+    "pk": 32
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete page",
+        "content_type": 11,
+        "codename": "delete_page"
+    },
+    "pk": 33
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Players",
+        "permissions": [
+            28,
+            29
+        ]
+    },
+    "pk": 1
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$aq9SK13eqlPe$0ME9eChk8ETELlkCtvFz+oNkpRqlYPsbsyl27F3Mevw=",
+        "last_login": "2017-12-14T17:51:50.775Z",
+        "is_superuser": true,
+        "username": "tim",
+        "first_name": "Tim",
+        "last_name": "",
+        "email": "tim@timhawthorn.co.uk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-11-26T20:34:32Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    },
+    "pk": 1
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$J7uNRpMA3oRx$nb5Z0EKCnV2q1WVEAsUxFJ+BHO7zt74paFf3CWQV2Cs=",
+        "last_login": "2017-12-09T00:37:12.819Z",
+        "is_superuser": false,
+        "username": "max",
+        "first_name": "Max",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-28T22:51:33Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    },
+    "pk": 2
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$xBGIICtcuoed$PYpJk1+xLBxJr7wcHblDwwUIWtzUcGDwZ5MxKJrEGM0=",
+        "last_login": "2017-11-29T21:54:33.842Z",
+        "is_superuser": false,
+        "username": "lyla",
+        "first_name": "Lyla",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-28T22:52:05Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    },
+    "pk": 3
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$Dtep8TIRXnmE$BFrEui2dE9VjgpiiVslkr0/uRvpykYKhMrRAfM8Mkmc=",
+        "last_login": "2017-11-29T21:56:22.386Z",
+        "is_superuser": false,
+        "username": "Xingta",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-29T21:19:01.680Z",
+        "groups": [],
+        "user_permissions": []
+    },
+    "pk": 5
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$CctUkYQgYmyD$88tZOtdqusz8uDa8RFHAxbU8ttSGPWQLyPh/25y2ECk=",
+        "last_login": "2017-12-03T15:17:49.716Z",
+        "is_superuser": false,
+        "username": "Newuser",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-12-03T15:17:30.286Z",
+        "groups": [],
+        "user_permissions": []
+    },
+    "pk": 6
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$20000$09HniO55ilDJ$XExjB6hXRMaI75OCFrEhdj7KdAK7hhQFXhDAJCzyizU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "testuser",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-12-03T19:10:50.422Z",
+        "groups": [],
+        "user_permissions": []
+    },
+    "pk": 7
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Glys\u00e2",
+        "author": 1,
+        "created_date": "2017-12-01T15:52:52Z",
+        "realm_slug": "glysa",
+        "description": "### Background to the 2040 Conflict\r\n\r\nBaresu\u00e2ni industrial and economic power grew greatly after the unification and the foundation of the Empire in 2001 following the Great Revolution. The newly formed socialist government put great resources into building up its navy, which developed into an industrial arms race between Baresu\u00e2n and Knebb. Dhex precipitated the Vubul crisis in 2010 by officially annexing the region which it had occupied since 2000. This angered the kingdom of Adhen and its patron the Western Yrsandin Church.\r\n\r\nRh\u00f4zad Vumir, having unsuccessfully attempted to overthrow the Baresu\u00e2nian government in 2033, eventually became the President of Baresu\u00e2n in 2037 after the mysterious disappearance of his parents, the Emperor and Empress. He abolished democracy, began a massive rearmament campaign and introduced conscription.\r\n\r\nIn 2001 Baresu\u00e2n annexed the Jynyhat region provoking little response from other Yhaltanian powers. Knebbian President Thed Maturad conceded this territory to Baresu\u00e2n in exchange for a promise of no further territorial demands. Greatly alarmed with Vumir making further demands on Koldavin, Knebb guarateed its support for Vorr\u00e2nian independence.\r\n\r\nThe Violet Fist, an Adhenian backed guerilla army assassinated the Dhexan consul in occupied J\u00fddstl. Dhex sent a peacekeeping force to the Jydmeq region in early 2040. The King of Adhen made a pact with Vorr\u00e2n that they would support each other if the other is invaded.\r\n\r\nTensions were also running high on the other side of the continent in the Shebish region between Gan and Lushin. The western part had been assimilated into the Kymel region, while the east held out for independence, backed by neighbouring Gan. Both sides warning that military activity in the area would be seen as an act of war.\r\n\r\nOn Dudahen 7th 2040 Baresu\u00e2n invaded Vorr\u00e2n. Three days later after a Knebbian ultimatum to cease military operations was ignored, Knebb declared war on Baresu\u00e2n.\r\n",
+        "brief_text": "Mythical steam age role playing adventure set during the 2040 Glysan War.",
+        "rule_set": "GURPS",
+        "genre": "steampunk",
+        "tech_level": 7,
+        "magic_level": 6,
+        "brief_img": "uploads/2040.4.6_VHXgbG2.png",
+        "wallpaper": "uploads/lehez_baran3.png"
+    },
+    "pk": 1
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Markdown Example",
+        "author": 1,
+        "created_date": "2017-12-03T16:15:53.021Z",
+        "realm_slug": "example",
+        "description": "# H1\r\n## H2\r\n### H3\r\n#### H4\r\n##### H5\r\n###### H6\r\n\r\nAlternatively, for H1 and H2, you can use an underline-ish style:\r\n\r\nAlt-H1\r\n======\r\n\r\nAlt-H2\r\n------\r\nEmphasis, aka italics, with *asterisks* or _underscores_.\r\n\r\nStrong emphasis, aka bold, with **asterisks** or __underscores__.\r\n\r\nCombined emphasis with **asterisks and _underscores_**.\r\n\r\n1. First ordered list item\r\n2. Another item\r\n1. Actual numbers don't matter, just that it's a number\r\n4. And another item.\r\n\r\n   To have a line break without a paragraph, you will need to use two trailing spaces.  \r\n   Note that this line is separate, but within the same paragraph.\r\n\r\n* Unordered list can use asterisks\r\n- Or minuses\r\n+ Or pluses\r\n\r\n[I'm an inline-style link](https://www.google.com)\r\n\r\n[I'm an inline-style link with title](https://www.google.com \"Google's Homepage\")\r\n\r\n[I'm a reference-style link][Arbitrary case-insensitive reference text]\r\n\r\n[I'm a relative reference to a repository file](../blob/master/LICENSE)\r\n\r\n[You can use numbers for reference-style link definitions][1]\r\n\r\nOr leave it empty and use the [link text itself].\r\n\r\nURLs and URLs in angle brackets will automatically get turned into links. \r\n<http: www.example.com=\"\">.\r\n\r\nSome text to show that the reference links can follow later.\r\n\r\n[arbitrary case-insensitive reference text]: https://www.mozilla.org\r\n[1]: http://slashdot.org\r\n[link text itself]: http://www.reddit.com\r\n\r\nHere's our logo (hover to see the title text):\r\n\r\nInline-style: \r\n![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png \"Logo Title Text 1\")\r\n\r\nReference-style: \r\n![alt text][logo]\r\n\r\n[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png \"Logo Title Text 2\"\r\n\r\nInline `code` has `back-ticks around` it.\r\n\r\n```\r\nvar s = \"JavaScript syntax highlighting\";\r\nalert(s);\r\n```\r\n \r\n```\r\nBut let's throw in a <b>tag</b>.\r\n```\r\n> Blockquotes are very handy in email to emulate reply text.\r\n> This line is part of the same quote.\r\n\r\nQuote break.\r\n\r\n> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. \r\n\r\nYou can also use raw HTML in your Markdown, and it'll mostly work pretty well.\r\n\r\n<dl>\r\n  <dt>Definition list</dt>\r\n  <dd>Is something people use sometimes.</dd>\r\n\r\n  <dt>Markdown in HTML</dt>\r\n  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>\r\n</dl>\r\n\r\nThree or more...\r\n\r\n---\r\n\r\nHyphens\r\n\r\n***\r\n\r\nAsterisks\r\n\r\n___\r\n\r\nUnderscores\r\n\r\n",
+        "brief_text": "",
+        "rule_set": "Markdown",
+        "genre": "Text formatting code",
+        "tech_level": 9,
+        "magic_level": 3,
+        "brief_img": "",
+        "wallpaper": ""
+    },
+    "pk": 6
+},
+{
+    "model": "realms.realm",
+    "fields": {
+        "name": "Grail Test",
+        "author": 1,
+        "created_date": "2017-12-14T18:43:06.191Z",
+        "realm_slug": "grailtest",
+        "description": "<br /><em>Recent map of the Grail Test server (click for full map)</em>\r\n\r\n<p>Grail Test is a game about placing and digging blocks in a randomly generated 3D world reminiscent of Medieval Europe.</p>\r\n\r\n<p class=\"quote left\"><q>The theme of the Grail is the bringing of life into what is known as the wasteland.</q> ~ Joseph Campbell. </p>\r\n\r\n![](/media/markdownx/8deada25-21db-4cbc-9fd8-d10a0d7eb573.png)\r\n\r\n<p>Grail Test is Open Source, Free Software. You can install it on your computer by following the instructions <a href=\"installing.html\">here</a>.</p>\r\n\r\n<p>Alternatively you can play the <a href=\"server.html\">Online version</a>, which works best using an official minetest client on a PC, but the game is also accessible using Multicraft II on hand-held devices (with some limitations).</p>\r\n\r\n<p class=\"clear\">&nbsp;</p>\r\n\r\n<p class=\"quote left\"><q>It begins with the king as a boy, having to spend the night alone in the forest to prove his courage so he can become king. Now while he is spending the night alone he's visited by a sacred vision. Out of the fire appears the Holy Grail, symbol of God's divine grace. And a voice said to the boy, 'You shall be keeper of the grail so that it may heal the hearts of men.' But the boy was blinded by greater visions of a life filled with power and glory and beauty. And in this state of radical amazement he felt for a brief moment not like a boy, but invincible, like God, so he reached into the fire to take the grail, and the grail vanished, leaving him with his hand in the fire to be terribly wounded. Now as this boy grew older, his wound grew deeper. Until one day, life for him lost its reason. He had no faith in any man, not even himself. He couldn't love or feel loved. He was sick with experience. He began to die. One day a fool wandered into the castle and found the king alone. And being a fool, he was simple minded, he didn't see a king. He only saw a man alone and in pain. And he asked the king, 'What ails you friend?' The king replied, 'I'm thirsty. I need some water to cool my throat'. So the fool took a cup from beside his bed, filled it with water and handed it to the king. As the king began to drink, he realized his wound was healed. He looked in his hands and there was the holy grail, that which he sought all of his life. And he turned to the fool and said with amazement, 'How can you find that which my brightest and bravest could not?' And the fool replied, 'I don't know. I only knew that you were thirsty.' It's very beautiful, isn't it?</q> ~ Parry, The Fisher King.</p>\r\n\r\n![](/media/markdownx/2a0e930e-1969-494a-adf0-6c73ecb02560.png)\r\n\r\n![](/media/markdownx/bec2242c-116c-4bb2-81f8-d043e59d4280.png)\r\n\r\n<p class=\"clear\">&nbsp;</p>\r\n\r\n![](/media/markdownx/1ef72813-5787-4b0c-a15c-5b2b4c386b37.png)\r\n\r\n![](/media/markdownx/fb8e9cdd-3f58-43b2-ab10-18b8aab6fa40.png)\r\n\r\n<p class=\"clear\">&nbsp;</p>",
+        "brief_text": "Grail Test is a game about placing and digging blocks in a randomly generated 3D world reminiscent of Medieval Europe. ",
+        "rule_set": "Minetest",
+        "genre": "Medieval Fantasy",
+        "tech_level": 4,
+        "magic_level": 8,
+        "brief_img": "uploads/avalonia7_0iZewZv.png",
+        "wallpaper": "uploads/bramblehaven_south.png"
+    },
+    "pk": 7
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Development",
+        "author": 1,
+        "created_date": "2017-12-14T18:50:33.854Z",
+        "page_slug": "development",
+        "realm_slug": "grailtest",
+        "description": "<h2>\r\n<a id=\"user-content-development\" class=\"anchor\" href=\"#development\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Development</h2>\r\n\r\n<p>The development of grailtest has tended to roughly follow evolution. It features a stripped-down core, which only really provides the raw elements and a bit of legacy support. Game Universe specific features have been stripped out into minerals, materials, food, tools and equipment mods. These were re-introduced in sequence in order to get the chain of dependencies right. The game also provides legacy support for farming and moreores. The tech level of the core game is not intended to progress beyond Archimedean simple machines.</p>\r\n\r\n<p>Several features from darkages, cottages and moreblocks have either been incorporated or inspired reworking. I have also looked at and incorporated code and ideas from Carbone, ethereal, adventuretest and Dreambuilder.</p>\r\n\r\n<p>One of the aims of the game is increased magical pseudo-realism; that is, things like crafting recipes should be logical and believable given the fantastic nature of the game-world. It is also intended to provide the player with a sense of progression through awards and earnable \"power-ups\" (limited privs). It is planned to increase the challenge of survival through hunger, mobs and natural disasters.</p>\r\n\r\n<h3 class=\"release-title\">0.4.0 - <a href=\"/0-afflatus/grailtest/releases/tag/v0.4.0\">Avalonia</a></h3>\r\n\r\n<p>This release is a complete rewrite from the ground up, featuring a total overhaul of the mapgen to support v5, v6, v7, valleys, flat and fractal mapgens. This is the core game; Experience, Fauna, Magic and Technology have been separated out and are currently being developed as separate mods, some of which will be included in future releases. This has had two months rigorous testing on a live server and has proved pretty reliable. This is the version running on our <a href=\"http://grailtest.pathilorra.co.uk/server.html\">server</a>, so if you want to test it out, hop on over.</p>\r\n\r\n<h4>Features</h4>\r\n\r\n<ul>\r\n<li>New /welcome screen</li>\r\n<li>New default sounds (by Ingar)</li>\r\n<li>Mapgen auto compatibility</li>\r\n<li>Stamina (Sofar's rewrite of Blockmen's hunger)</li>\r\n<li>Sunflower seeds, mistletoe, blue mushroom</li>\r\n<li>New stone brick textures and Red stone tiles</li>\r\n<li>Decorative bones</li>\r\n<li>Adapted version of xdecor (by kilbith and others)</li>\r\n<li>Simplyslopes (by Delaroyas)</li>\r\n<li>Fachwerk - timber framed nodes</li>\r\n<li>Equipment_modpack including itemframes and pictures</li>\r\n<li>Basic bow (by Napiophelios) replaces throwing</li>\r\n<li>Barrel and vessels work together to ferment and dispense drinks</li>\r\n<li>Cheese can be fermented in barrels</li>\r\n<li>Variety of metal and wooden fences</li>\r\n<li>Steel trapdoor</li>\r\n<li>Written books, which can be copied</li>\r\n</ul>\r\n\r\n<h3 class=\"release-title\">0.3.2 - <a href=\"/0-afflatus/grailtest/releases/tag/v0.3.2\">Brythonia</a></h3>\r\n\r\n<p>This version of grailtest is an unstable feature release compatible with minetest 0.4.13. It includes a magic system, linked to player development with earnable privs and enchantable items. This is the version which was running on the server during spring 2015, so it has had a lot of player testing and is now being maintained as a separate <code>grailtest</code> repository. The magic and scorecard systems are still very much WIP.</p>\r\n\r\n<h4>Features</h4>\r\n\r\n<ul>\r\n<li>Biome support for mapgen v5 / v7 brought in line with standard decoration system</li>\r\n<li>Snowdrift synced with mapgen</li>\r\n<li>Tamed fire</li>\r\n<li>Improved boats</li>\r\n<li>Vessels shelf</li>\r\n<li>Unicorn soup recipe</li>\r\n<li>Horses, wolves, deer, giraffe, goat, yeti and more npcs</li>\r\n<li>Stone of Fauna - mob spawner</li>\r\n<li>Seaplants, onion and coral</li>\r\n<li>/sit /sleep /stand chatcommands</li>\r\n<li>Notice</li>\r\n<li>Magic system based on playereffects; with new magic priv, which can be earned by gaining a high crafting score.</li>\r\n<li>/enchant chatcommand</li>\r\n<li>Potions and rings</li>\r\n<li>Stats system with scorecard and chatcommands /scores, /score and /scores_update</li>\r\n<li>Crafting scores</li>\r\n<li>Awards (modified for Grail Test with new awards and icons)</li>\r\n<li>on_craft and on_protection_violation triggers for awards </li>\r\n<li>Throwing - bow - Simplified version with just wooden bows and steel arrows</li>\r\n<li>Fishing with crafting for bait worm</li>\r\n<li>/tpr - player teleport chatcommands</li>\r\n<li>Improved textures</li>\r\n</ul>\r\n\r\n\r\n<h3>\r\n<a id=\"user-content-031\" class=\"anchor\" href=\"#031\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>0.3.1</h3>\r\n\r\n<ul class=\"task-list\">\r\n<li>Compatible with minetest 0.4.11</li>\r\n<li>New plants - beet, fathen and orange trees</li>\r\n<li>Barrel and wooden panel</li>\r\n<li>Lantern and stained glass</li>\r\n<li>Tiles</li>\r\n<li>signs_lib - signs now display text</li>\r\n<li>/spawn command</li>\r\n<li>Removed inventory_plus and zcg to allow use of unified_inventory</li>\r\n<li>Improved textures</li>\r\n<li>Lots of bug fixes</li>\r\n</ul>\r\n\r\n<h3>\r\n<a id=\"user-content-03x---albion\" class=\"anchor\" href=\"#03x---albion\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>0.3.x - \"Albion\"</h3>\r\n\r\n<p>Basic game including materials and equipment. Supports stone-age to iron-age lifestyle.</p>\r\n\r\n<p>Core modules providing functionality previously in 'default':</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>tool -- default tools</li>\r\n<li>material -- default materials</li>\r\n<li>equipment -- default equipment</li>\r\n</ul>\r\n\r\n<p>Equipment and materials from minetest_game:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>fire</li>\r\n<li>boats</li>\r\n<li>bucket</li>\r\n<li>doors</li>\r\n<li>dye</li>\r\n<li>stairs</li>\r\n<li>vessels</li>\r\n<li>wool</li>\r\n<li>xpanes</li>\r\n</ul>\r\n\r\n<p>Features:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>bonfire</li>\r\n<li>straw, hay bales and cob</li>\r\n<li>wooden bucket</li>\r\n<li>cauldron</li>\r\n<li>New food recipes</li>\r\n<li>New stone bricks and shingles</li>\r\n</ul>\r\n\r\n<h3>\r\n<a id=\"user-content-02x---pangaea\" class=\"anchor\" href=\"#02x---pangaea\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>0.2.x - \"Pangaea\"</h3>\r\n\r\n<p>Full mapgen integrating 'flowers' with stripped-down versions of 'moretrees' and 'plantlife'. This release contains enough functionality to support a basic hunter-gatherer lifestyle.</p>\r\n\r\n<p>Core modules providing functionality previously in 'default'.</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>mineral (plus legacy support for moreores)</li>\r\n<li>mapgen</li>\r\n<li>plant (plus legacy support for farming)</li>\r\n<li>food</li>\r\n</ul>\r\n\r\n<p>UI:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>sethome</li>\r\n<li>creative</li>\r\n<li>inventory_plus</li>\r\n<li>zcg</li>\r\n</ul>\r\n\r\n<p>Flora:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>flowers</li>\r\n<li>moretrees</li>\r\n<li>plantlife_modpack</li>\r\n</ul>\r\n\r\n<p>Features:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>New rock and soil types</li>\r\n<li>New gem types</li>\r\n<li>New rock plants, heath shrubs and fruit bushes</li>\r\n<li>Group based food recipes</li>\r\n</ul>\r\n\r\n<h3>\r\n<a id=\"user-content-map-generation\" class=\"anchor\" href=\"#map-generation\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Map Generation</h3>\r\n\r\n<p>The game supports v5, v6, v7 and singlenode mapgens. Mapgen only generates terrain (apart from v6, which places trees), so flora are placed by individual mods. V7 is probably the most playable (YMMV).</p>\r\n\r\n<h3>\r\n<a id=\"user-content-textures\" class=\"anchor\" href=\"#textures\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Textures</h3>\r\n\r\n<p>The game uses a combination of 16x and 32x textures. Some very common low-detail nodes, such as stone and grass, use 16x textures; Nodes requiring more detail may use 32x textures. Many new textures have been created specifically for this game, some are placeholders, awaiting better replacements. Texture credits may be found in the module's README.txt. Feel free to raise issues against any textures that are not DFSG compliant, have other potential licensing problems or suggest suitable replacements / solutions.</p>"
+    },
+    "pk": 11
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Installing",
+        "author": 1,
+        "created_date": "2017-12-14T18:51:26.490Z",
+        "page_slug": "installing",
+        "realm_slug": "grailtest",
+        "description": "<h2>\r\n<a id=\"user-content-installing\" class=\"anchor\" href=\"#installing\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Installing</h2>\r\n\r\n<p>If you've never done this before ...</p>\r\n\r\n<ol class=\"task-list\">\r\n<li>\r\n<p>Install minetest game engine</p>\r\n\r\n<p>Game engine (minetest) download: <a href=\"http://minetest.net/download\">http://minetest.net/download</a>\r\n    or <a href=\"https://github.com/minetest/minetest/\">https://github.com/minetest/minetest/</a></p>\r\n\r\n<p>Help for Windows users: <a href=\"http://wiki.minetest.net/Getting_Started#Windows\">http://wiki.minetest.net/Getting_Started#Windows</a></p>\r\n</li>\r\n<li>\r\n<p>Download grailtest</p>\r\n\r\n<p>grailtest download: <a href=\"https://github.com/0-afflatus/grailtest/archive/v0.4.0.zip\">https://github.com/0-afflatus/grailtest/archive/v0.4.0.zip</a></p>\r\n</li>\r\n<li><p>Copy .zip into  ~/.minetest/games/\r\n~ is the folder you installed minetest into, probably your home folder.</p></li>\r\n<li><p>Extract .zip and rename to grailtest</p></li>\r\n<li>\r\n<p>Fire up minetest, click on the grail icon at the bottom of the window.</p>\r\n\r\n<ol class=\"task-list\">\r\n<li>   Click 'New'</li>\r\n<li>   Give your world a name</li>\r\n<li> Choose Mapgen (v7 recommended)</li>\r\n<li> Check that Game is set to grailtest</li>\r\n<li> Click 'Create'</li>\r\n</ol>\r\n</li>\r\n<li><p>Back at the opening dialog Select World and click 'Play'</p></li>\r\n</ol>\r\n\r\n<p>Alternatively, come and play on the <a href=\"server.html\">online version</a>, which only requires the minetest client*. Neat huh?</p>\r\n\r\n<p>* It is playable on Multicraft II for hand-held devices but not fully supported.</p>\r\n\r\n<p>The rest of this page is a bit technical. Skip to <a href=\"playguide.html\">Player Guide</a> if you just want to get on and play.</p>\r\n\r\n<p>Further information:\r\n<a href=\"https://forum.minetest.net/viewtopic.php?f=50&amp;t=10941\">https://forum.minetest.net/viewtopic.php?f=50&amp;t=10941</a></p>\r\n\r\n<h2>\r\n<a id=\"user-content-compatibility\" class=\"anchor\" href=\"#compatibility\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Compatibility</h2>\r\n\r\n<p>The grailtest github master HEAD is generally compatible with the latest development version of minetest.</p>\r\n\r\n<p>This version requires minetest 0.4.14.</p>\r\n\r\n<h2>\r\n<a id=\"user-content-compatible-mods\" class=\"anchor\" href=\"#compatible-mods\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Compatible mods:</h2>\r\n\r\n<p>Mods that are known to work, albeit with limited support:</p>\r\n\r\n<p>Recommended:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>Mobs Redo by TenPlus1, based on PilzAdam's Simple Mobs. <a href=\"https://github.com/tenplus1/mobs\">https://github.com/tenplus1/mobs</a>\r\n</li>\r\n<li>areas</li>\r\n<li>chatplus</li>\r\n<li>explore_map</li>\r\n<li>mapfix</li>\r\n<li>markers</li>\r\n<li>names_per_ip</li>\r\n<li>no_bad_names</li>\r\n<li>player_textures</li>\r\n<li>sedimentology</li>\r\n<li>unified_inventory</li>\r\n<li>world_edit</li>\r\n</ul>\r\n\r\n<p>Also compatible-ish:</p>\r\n\r\n<ul class=\"task-list\">\r\n<li>3d_armor</li>\r\n<li>farming_plus</li>\r\n<li>inventory_plus</li>\r\n<li>simple_skins</li>\r\n</ul>\r\n\r\n<p>Mods designed for other games may not work as expected.</p>"
+    },
+    "pk": 12
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Magic",
+        "author": 1,
+        "created_date": "2017-12-14T18:52:27.355Z",
+        "page_slug": "magic",
+        "realm_slug": "grailtest",
+        "description": "<h1>Magic</h1>\r\n\r\n<img class=\"right\" src=\"images/college_tower1.png\" alt=\"The College of Magic\">\r\n\r\n<p>In order to gain magic priv you must complete 4 Challenges and place these four items in a golden chest:\r\n<ul class=\"task-list\">\r\n<li>Rainbow Spork</li>\r\n<li>Gem of Wishes</li>\r\n<li>Cauldrom of Rebirth</li>\r\n<li>Talisman of Power</li>\r\n</ul>\r\n</p>\r\n\r\n<h2>Rainbow Spork</h2>\r\n<p>Find all seven coloured sporks and place them in a golden chest.</p>\r\n\r\n<h2>Gem of Wishes</h2>\r\n\r\n<p>Mine all these gems and place them in a golden chest:\r\n<ul class=\"task-list\">\r\n<li>19 Amethyst Gems</li>\r\n<li>29 Ruby Gems</li>\r\n<li>39 Obsidian</li>\r\n<li>49 Diamond Gems</li>\r\n<li>59 Emerald Gems</li>\r\n<li>69 Saphire Gems</li>\r\n<li>79 Topaz Gems</li>\r\n</ul>\r\n</p>\r\n\r\n<h2>Cauldron of Rebirth</h2>\r\n\r\nCraft the following and place in a golden chest:\r\n<ul class=\"task-list\">\r\n<li>49 acorn muffins</li>\r\n<li>24 hot unicorn soups</li>\r\n<li>12 bottles of mead</li>\r\n<li>49 bronze ingots</li>\r\n</ul>\r\n\r\n<h2>Talisman of Power</h2>\r\n\r\nCraft the following and place in a golden chest:\r\n<ul class=\"task-list\">\r\n<li>24 column blueprints </li>\r\n<li>a grey hidden door</li>\r\n<li>49 stone runes </li>\r\n<li>49 gold ingots </li>\r\n</ul>\r\n\r\n<h1>The six directions</h1>\r\n<h2>North</h2>\r\n<img class=\"right\" src=\"images/earth_room.png\" alt=\"Enchanting Room\">\r\n\r\n<p><ul class=\"task-list\">\r\n<li>+ Z</<li>\r\n<li>Earth</<li>\r\n<li>Emerald</<li>\r\n<li>Copper</<li>\r\n<li>Pine Wood</<li>\r\n</ul>\r\nThe staff casts a grow spell, <br />the potion gives invisibility.</p>\r\n\r\n<h2>East</h2>\r\n<p><ul class=\"task-list\">\r\n<li>+ X</<li>\r\n<li>Air</<li>\r\n<li>Diamond</<li>\r\n<li>Steel</<li>\r\n<li>Apple Wood</<li>\r\n</ul>\r\nStaff and potion give flight. This is the direction the sun and moon rise in.</p>\r\n\r\n<h2>South</h2>\r\n<img class=\"right\" src=\"images/fire_room.png\" alt=\"Enchanting Room\">\r\n\r\n<ul class=\"task-list\">\r\n<li>- Z</<li>\r\n<li>Fire</<li>\r\n<li>Ruby</<li>\r\n<li>Gold</<li>\r\n<li>Oak Wood</<li>\r\n</ul>\r\nStaff casts Fire, Potion is an antidote.<br />Ring and armour give protection from fire.</p>\r\n\r\n<h2>West</h2>\r\n<p><ul class=\"task-list\">\r\n<li>- X</<li>\r\n<li>Water</<li>\r\n<li>Saphire</<li>\r\n<li>Mithril</<li>\r\n<li>Birch Wood</<li>\r\n</ul>\r\nStaff casts freezing ray. This is the direction the sun and moon set.</p>\r\n\r\n<h2>Up</h2>\r\n<p><ul class=\"task-list\">\r\n<li>+ Y</<li>\r\n<li>Amethyst</<li>\r\n<li>Silver</<li>\r\n<li>Willow Wood</<li>\r\n</ul>\r\nStaff and potion give fast speed.</p>\r\n\r\n<h2>Down</h2>\r\n<p><ul class=\"task-list\">\r\n<li>- Y</<li>\r\n<li>Obsidian</<li>\r\n<li>Bronze</<li>\r\n<li>Spruce</<li>\r\n</ul>\r\n</p>\r\n\r\n<h2>Centre</h2>\r\n<p><ul class=\"task-list\">\r\n<li>Topaz</<li>\r\n<li>Tin</<li>\r\n<li>Fir</<li>\r\n</ul>\r\nHere and Now, healing.</p>\r\n\r\n<h1>Enchanting</h1>\r\n\r\n<img class=\"right\" src=\"images/enchanting.png\" alt=\"Enchanting Areas\">\r\n\r\n<p>You can enchant almost anything with a gem in it. You have to wield the item and use the <code>/enchant</code> command. Power is increased if there are bookshelves, beech wood or other nodes related to the same direction as the gem you are trying to enchant.</p>"
+    },
+    "pk": 13
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Play Guide",
+        "author": 1,
+        "created_date": "2017-12-14T18:53:11.388Z",
+        "page_slug": "play_guide",
+        "realm_slug": "grailtest",
+        "description": "<h1>\r\n<a id=\"user-content-purpose\" class=\"anchor\" href=\"#purpose\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Purpose</h1>\r\n\r\n<p>Find the Grail.</p>\r\n\r\n<h2>\r\n<a id=\"user-content-advice-for-the-neophyte\" class=\"anchor\" href=\"#advice-for-the-neophyte\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Gameplay advice for the neophyte</h2>\r\n\r\n<img class=\"right\" src=\"images/mountains.png\" alt=\"Mountains\">\r\n\r\n<p>There are two separate game modes. Creative and Survival.  If you're mostly interested in making fantastic structures from scratch with unlimited resources, <strong>Creative Mode</strong> is your best bet. However, if you prefer a world of danger, using crafting, building and ingenuity to survive, you'll want to <strong>Enable Damage</strong> and install <a href=\"https://github.com/tenplus1/mobs\">mobs</a>. </p>\r\n\r\n<p>Grail_test is a game about placing and digging blocks in a randomly generated 3D world. You move around using the <strong>WASD</strong> keys, <strong>space bar</strong> to jump / swim and <strong>Left Shift</strong> to go down or sneak. The first challenge is to build a house to protect you from nocturnal monsters and stash your treasure. </p>\r\n\r\n<p class=\"quote left\"><q>Follow your bliss.</q> ~ Joseph Campbell.</p>\r\n\r\n<h3>\r\n<a id=\"user-content-gather-resources-and-build-something\" class=\"anchor\" href=\"#gather-resources-and-build-something\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Gather resources and build something</h3>\r\n\r\n<p>To get started, find a tree. Click and hold with the left mouse button on the trunk until it breaks. A piece of tree trunk will appear in your inventory (the 'hotbar' at the bottom of the screen is the first row of your inventory). To select different items from the hotbar, use the mouse wheel, or the number keys 1-8. You place blocks by right-clicking.</p>\r\n\r\n<p>To open your inventory menu, press the I key on your keyboard. When you open your inventory, you will see a 3x3 box of squares at the top. This is the crafting grid. It is where you make the various items. Press Esc to close it.</p>\r\n\r\n<p>Craft planks and sticks then you can make a wooden pick, which will allow you to quarry stone, metal and gems. Once you get some cobble you can make a stone pick. When you have collected some ores you need to cook them in a furnace to turn them into ingots. Ingots can be crafted into tools, armour and other useful stuff. You can cook food in furnaces. You can also make glass from sand and turn cobble back into stone.</p>\r\n\r\n<img class=\"left\" src=\"images/penngwynn_farm.png\" alt=\"Farming\">\r\n\r\n<p>You heal hearts by eating things. You can grow crops on hoed ground near a water supply. And you can build whatever you want.</p>\r\n\r\n<p class=\"quote right\"><q>But choose wisely, for while the true Grail will bring you life, the false Grail will take it from you.</q> ~ Grail Knight, Indiana Jones and the Last Crusade.</p>\r\n\r\n<h3>Grailcast series 1</h3>\r\n\r\n<p>This first series of <strong>video tutorials</strong> for Grail Test takes you through the basics from moving around and using the inventory to farming and raising animals. Each episode is approximately half an hour long.</p>\r\n\r\n<ul>\r\n<li><a href=\"https://youtu.be/bJ_NYH4L1Ps\">Grailcast 1.1</a> - Gathering resources and building a shelter\r\n<li><a href=\"https://youtu.be/LEA7AvwJV9s\">Grailcast 1.2</a> - The inventory, controls and protection\r\n<li><a href=\"https://youtu.be/gP2QDHq2gmU\">Grailcast 1.3</a> - Building a timber-framed farmhouse\r\n<li><a href=\"https://youtu.be/5F-9XuWyy5w\">Grailcast 1.4</a> - Raising the roof and getting directions\r\n<li><a href=\"https://youtu.be/JG1q5KQyxDQ\">Grailcast 1.5</a> - Farming; grains and vegetables \r\n<li><a href=\"https://youtu.be/0dcekZylvik\">Grailcast 1.6</a> - Animals; taming and breeding\r\n<li><a href=\"https://youtu.be/lQQ2JXvK3xM\">Grailcast 1.7</a> - Cookery; food and drink\r\n</ul>\r\n\r\n<p>The series was recorded on the Grail Test server, so it does depend on having additional mods installed, such as unified_inventory, mobs, areas and markers. The game is constantly in development, so some features may have changed a bit since these tutorials were made.</p>\r\n\r\n<p class=\"clear\"/><hr /></p>\r\n\r\n<h2>Chat commands</h2>\r\nGrail Test provides several text commands that you type into the chat prompt. Chat commands always start with a forward slash like this: <b>/</b>\r\n\r\n<h3>Information</h3>\r\n\r\n<ul>\r\n<li><p><code>/help [all/privs/&lt;command&gt;] </code> -- get help on using a chatcommand or list privs</p></li>\r\n<li><p><code>/status </code> -- show server status and Message Of The Day</p></li>\r\n<li><p><code>/welcome </code> -- show Welcome screen</p></li>\r\n<li><p><code>/mods </code> -- get a list of mods in the game</p></li>\r\n<li><p><code>/privs </code> -- list your privs</p></li>\r\n<li><p><code>/scores </code> -- show your score card</p></li>\r\n<li><p><code>/awards </code> -- get a graphical list of possible awards</p></li>\r\n<li><p><code>/awd &lt;award name&gt; </code> -- get details of an award</p></li>\r\n<li><p><code>/cawards </code> -- get a text list of possible awards</p></li>\r\n</ul>\r\n\r\n<h3>Getting around</h3>\r\n\r\nPlayers have limited teleporting abilities - you can set a home location or request to teleport to another player and you can always get back to the town centre if you get lost.\r\n\r\n<ul>\r\n<li><p><code>/spawn </code> -- teleport back to the town centre</p></li>\r\n<li><p><code>/sethome </code> -- set your home to where you are now</p></li>\r\n<li><p><code>/home </code> -- go to your home position</p></li>\r\n<li><p><code>/tphr &lt;player&gt; </code> -- ask a player to teleport to you</p></li>\r\n<li><p><code>/tpn </code> -- refuse teleport request</p></li>\r\n<li><p><code>/tpr &lt;player&gt; </code> -- ask to teleport to another player</p></li>\r\n<li><p><code>/tpy </code> -- accept teleport request</p></li>\r\n</ul>\r\n\r\n<h3>Advanced chat</h3>\r\n\r\n<ul>\r\n<li><p><code>/me &lt;action&gt; </code> -- pose a chat action</p></li>\r\n<li><p><code>/msg &lt;player&gt; &lt;message&gt; </code> -- send a Private Message to a player</p></li>\r\n<li><p><code>/mail &lt;player&gt; &lt;message&gt; </code> -- leave a Private Message in a player's inbox so they can read it later</p></li>\r\n</ul>\r\n\r\nAnd this could be useful. You can also drag things into the trash in your inventory. There is no need to dump unwanted items, but you can sell them or give them away.\r\n\r\n<ul>\r\n<li><p><code>/pulverize </code> -- destroy the item you are wielding</p></li>\r\n</ul>\r\n\r\n<h2>Areas</h2>\r\n\r\n<p>The server includes Areas mod, which lets you protect areas that you're building. You can either select an area using markers or chatcommands.</p>\r\n\r\n<!-- Areas -->\r\n<h3><a id=\"user-content-tutorial\" class=\"anchor\" href=\"#tutorial\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Tutorial</h3>\r\n\r\n<p>To protect an area you must first set the corner positions of the area.\r\nIn order to set the corner positions you can run:</p>\r\n\r\n<ul>\r\n<li><code>/area_pos set</code> and punch the two corner nodes to set them.</li>\r\n<li><code>/area_pos set1/set2</code> and punch only the first or second corner node to\r\nset them one at a time.</li>\r\n<li><code>/area_pos1/2</code> to set one of the positions to your current position.</li>\r\n<li><code>/area_pos1/2 X Y Z</code> to set one of the positions to the specified\r\ncoordinates.</li>\r\n</ul>\r\n\r\n<p>Once you have set the border positions you can protect the area by running one\r\nof the following commands:</p>\r\n\r\n<ul>\r\n<li><code>/set_owner &lt;OwnerName&gt; &lt;AreaName&gt;</code> -- If you have the <code>areas</code> privilege.</li>\r\n<li><code>/protect &lt;AreaName&gt;</code> -- If you have the <code>areas</code> privilege or the server\r\nadministrator has enabled area self-protection.</li>\r\n</ul>\r\n\r\n<p>The area name is used only for informational purposes (so that you know what\r\nan area is for).  It is not used for any other purpose.\r\nFor example: <code>/set_owner SomePlayer Mese city</code></p>\r\n\r\n<p>Now that you own an area you may want to add sub-owners to it. You can do this\r\nwith the <code>add_owner</code> command.  Anyone with an area can use the <code>add_owner</code>\r\ncommand on their areas.  Before using the <code>add_owner</code> command you have to\r\nselect the corners of the sub-area as you did for <code>set_owner</code>. If your markers\r\nare still around your original area and you want to grant access to your\r\nentire area you will not have to re-set them. You can also use <code>select_area</code> to\r\nplace the markers at the corners of an existing area if you've reset your\r\nmarkers and want to grant access to a full area.\r\nThe <code>add_owner</code> command expects three arguments:</p>\r\n\r\n<ol>\r\n<li>The ID number of the parent area (the area that you want to add a\r\nsub-area to).</li>\r\n<li>The name of the player that will own the sub-area.</li>\r\n<li>The name of the sub-area. (can contain spaces)</li>\r\n</ol>\r\n\r\n<p>For example: <code>/add_owner 123 BobTheBuilder Diamond lighthouse</code></p>\r\n\r\n<h3><a id=\"user-content-commands\" class=\"anchor\" href=\"#commands\" aria-hidden=\"true\"><span class=\"octicon octicon-link\"></span></a>Protection Commands</h3>\r\n\r\n<ul>\r\n<li><p><code>/protect &lt;AreaName&gt;</code> -- Protects an area for yourself. (if\r\nself-protection is enabled)</p></li>\r\n<li><p><code>/set_owner &lt;OwnerName&gt; &lt;AreaName&gt;</code> -- Protects an area for a specified\r\nplayer. (requires the <code>areas</code> privilege)</p></li>\r\n<li><p><code>/add_owner &lt;ParentID&gt; &lt;OwnerName&gt; &lt;ChildName&gt;</code> -- Grants another player\r\ncontrol over part (or all) of an area.</p></li>\r\n<li><p><code>/rename_area &lt;ID&gt; &lt;NewName&gt;</code> -- Renames an existing area.</p></li>\r\n<li><p><code>/list_areas</code> -- Lists all of the areas that you own, or all areas if you\r\nhave the <code>areas</code> privilege.</p></li>\r\n<li><p><code>/remove_area &lt;ID&gt;</code> -- Removes an area that you own. Any sub-areas of that\r\narea are made sub-areas of the removed area's parent, if it exists.\r\nIf the removed area has no parent it's sub-areas will have no parent.</p></li>\r\n<li><p><code>/recursive_remove_areas &lt;ID&gt;</code> -- Removes an area and all sub-areas of it.</p></li>\r\n<li><p><code>/change_owner &lt;ID&gt; &lt;NewOwner&gt;</code> -- Change the owner of an area.</p></li>\r\n<li><p><code>/select_area &lt;ID&gt;</code> -- Sets the area positions to those of an existing\r\narea.</p></li>\r\n<li><p><code>/area_pos {set,set1,set2,get}</code> -- Sets the area positions by punching\r\nnodes or shows the current area positions.</p></li>\r\n<li><p><code>/area_pos1 [X,Y,Z|X Y Z]</code> -- Sets area position one to your position or\r\nthe one supplied.</p></li>\r\n<li><p><code>/area_pos2 [X,Y,Z|X Y Z]</code> -- Sets area position two to your position or\r\nthe one supplied.</p></li>\r\n</ul>\r\n<!-- End Areas -->\r\n\r\n<p class=\"clear\"/><hr /></p>\r\n\r\n<!-- Mobs -->\r\n<h2>Mobs</h2>\r\n\r\n<p>Some mobs can be tamed if you feed them the right sort of food. Right-click to feed them, some of the smaller ones can be picked up when tame.</p>\r\n\r\n<ul>\r\n<li><b>bears</b> - like honey</li>\r\n<li><b>bees</b> - drop honey when killed, caught with a right-click</li>\r\n<li><b>bunny</b> - tamed with 4 carrots, then caught with a right-click</li>\r\n<li><b>chicken</b> - lays eggs, tamed with 8 grains, then caught with a right-click</li>\r\n<li><b>cow</b> - tamed with 8 straw, milked by right-clicking with an empty bucket</li>\r\n<li><b>deer</b> - like hay</li>\r\n<li><b>goats</b> - like straw</li>\r\n<li><b>horses</b> - like straw and can be broken in by right-clicking with a saddle</li>\r\n<li><b>kitten</b> - tamed with 4 fish, then caught with a right-click</li>\r\n<li><b>rat</b> - caught with a right-click</li>\r\n<li><b>sheep</b> - tamed with 8 hay, shear them to get wool by right-clicking with shears</li>\r\n<li><b>spider</b> - drop string when killed</li>\r\n<li><b>warthog</b> - tamed with 8 apples</li>\r\n<li><b>wolf</b> - tamed with 8 raw meat; this is VERY dangerous!</li>\r\n</ul>\r\n<!-- End Mobs -->\r\n\r\n<p class=\"clear\"/><hr /></p>\r\n\r\n<!-- Crafting -->\r\n<h2>Crafting</h2>\r\n\r\n<p>There are a few crafting recipes that are not in the craft guide to save space. These are the stairs, slab and slope recipes, which apply to almost all cube-shaped building blocks. These blocks are highly directional, and rotate differently depending on the direction you place them.</p>\r\n\r\n<p>\r\n<img class=\"left craft\" src=\"images/guide/stairs.png\" alt=\"Stairs\"> Stairs<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slab.png\" alt=\"Slab\"> Slab<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slope.png\" alt=\"Slope\"> Slope<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slope_in_diag.png\" alt=\"Inside diagonal corner slope\"> Inside diagonal corner slope<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slope_in_squ.png\" alt=\"Inside square corner slope\"> Inside square corner slope<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slope_out_diag.png\" alt=\"Outside diagonal corner slope\"> Outside diagonal corner slope<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/slope_out_squ.png\" alt=\"Outside square corner slope\"> Outside square corner slope</p>\r\n\r\n<h3>Archery</h3>\r\n\r\n<p>\r\n<img class=\"left craft\" src=\"images/guide/bow.png\" alt=\"Bow\"> Bow<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/arrow.png\" alt=\"Arrow\"> Arrow<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/bow_arrow.png\" alt=\"Arrows next to bow in inventory\"> The arrows must be placed in the next slot to the right from the bow. Left-click to fire.</p>\r\n\r\n<h3>Fishing</h3>\r\n\r\n<p>\r\n<img class=\"left craft\" src=\"images/guide/fishing.png\" alt=\"Fishing rod\"> Fishing rod<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/fishing2.png\" alt=\"Fishing rod\"> Fishing rod<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/bait.png\" alt=\"Bait\"> Bait<br class=\"clear\">\r\n<img class=\"left craft\" src=\"images/guide/fishing_bait.png\" alt=\"Bait next to rod in inventory\"> The bait must be placed in the next slot to the right from the fishing rod. Left-click to cast, right-click to reel in.</p>\r\n\r\n<!-- End Crafting -->\r\n\r\n<p class=\"clear\">&nbsp;</p>\r\n\r\n<p><a href=\"http://grailtest.pathilorra.co.uk/magic.html\">Secrets of the Magic System</a></p>\r\n\r\n<p style=\"text-align:center;\">Follow your inspiration, build what you like and have fun!</p>"
+    },
+    "pk": 14
+},
+{
+    "model": "realms.page",
+    "fields": {
+        "title": "Server",
+        "author": 1,
+        "created_date": "2017-12-14T18:53:44.095Z",
+        "page_slug": "server",
+        "realm_slug": "grailtest",
+        "description": "<p class=\"quote right\"><q>You can't expect to wield supreme executive power just because some watery tart threw a sword at you.</q> ~ Dennis, Monty Python and the Holy Grail.</p>\r\n\r\n<p>Grail Test is a dark-age / medieval adventure game mod set in northern Europe with a strong magical theme.</p>\r\n\r\n<!-- p><strong>Address: <span style=\"color: #800000\">grailtest.gigaworld.org:30001</span></strong></p -->\r\n\r\n<p><strong>Sub-game:</strong> <a href=\"https://forum.minetest.net/viewtopic.php?f=50&amp;t=10941\" class=\"postlink\">Grail Test</a></p>\r\n\r\n<p><strong>Wizards:</strong> afflatus (admin), Duke and ElishQa (moderators)</p>\r\n\r\n<p><strong>Contact:</strong> In-game - <code>/mail &lt;wizard&gt;</code> or <a href=\" https://forum.minetest.net/viewtopic.php?f=10&t=13127\">Forum</a>.</p>\r\n\r\n<img class=\"right\" src=\"images/spawn_south.png\" alt=\"Grail Town yesterday\">\r\n\r\n<p><strong>Description:</strong> Grail Test runs in survival mode, with PvP disabled. You will have to defend yourself against monsters at night and gather resources to build and craft. Admins are called Wizards in this game. Crafting, building great public buildings and helping other players is the best way to get player advancement.</p>\r\n\r\n<p>Go to the Public Serverlist in the Client tab and scroll down until you find Grail Test, or check <a href=\"http://servers.minetest.net/\">http://servers.minetest.net/</a> for connection details.\r\nThe server is not up 24/7, so if you can't connect, please try again later. Interact is disabled by default, so you need to ask for it once you have logged on.</p>\r\n\r\n<p>Please be warned, the server runs the development version of the game so features may come and go and not everything works perfectly. That said, most people familiar with minetest should have no problems getting used to the slight differences in gameplay. The game is in survival mode, with PvP disabled.</p>\r\n\r\n<h2>Guidelines</h2>\r\n<img class=\"right\" src=\"images/miners_arms.png\" alt=\"The Miner's Arms\">\r\n\r\n<p>\r\n<ol>\r\n<li>If you take responsibility for your actions and you act with care towards other players, you can probably do whatever you want.</li>\r\n\r\n<li>Please ask for help and have important discussions in English. You are welcome to use your own language socially.</li>\r\n\r\n<li>Hate speech will not be tolerated. Racism, sexism, homophobia and abusive behaviour will result in banning. Please be aware that some players do not like cursing, so please take care with your language.</li>\r\n\r\n<li>Hassling for privs or chat spamming will result in gagging or toading.</li>\r\n\r\n<li>Griefers will be arrested, probably without warning. It's not fun so don't bother.</li>\r\n\r\n<li>Hacked clients are not welcome.</li>\r\n\r\n<li>On the internet you can be a banjo playing orang-utan from Mars if you want, nobody needs to know who you are in real life or where you live, not even the admins. Don't share your personal details.</li>\r\n\r\n<li>Spoofing (pretending to be another player) is a bannable offence.</li>\r\n\r\n<li>Dating is discouraged. If your real or in-game relationship starts annoying other players, you will be asked to play somewhere else.</li>\r\n\r\n<li>The map regularly gets cropped and regenerated beyond 3k from spawn in order to keep the map size manageable, so please don't bother building that far out.</li>\r\n</ol>\r\n</p>\r\n\r\n<div class=\"important\">\r\n<h2>Accounts</h2>\r\n<p>Every player must have a separate account, <strong>one</strong> per player; don't share your password with anyone else, especially not your younger brother.\r\nMultiple accounts and account sharing is <strong>not</strong> permitted on the Grail Test server without specific permission from me. Permission may be given if you have a good reason.\r\n\r\n<p>If friends and other family members want to play from the same IP I will gladly extend permission, so long as I know what's going on. I do not need or want details that would identify you in real-life, but it is useful to me to know if other players on your IP are friends, younger brothers / sisters or even parents. All are welcome so long as I'm kept informed of the situation.\r\n\r\n<p>If I find out that accounts are being shared or you are pretending to be another player, the consequences range from loss of privs to outright banning, depending on the disruption caused. I know this is different from other servers and I will give responsible players a chance to sort it out. So if you have been sharing your account or plan to do so, please let me know immediately and we can almost certainly come to some arrangement. Please bear in mind that, because of the way the banning system works, if one of you gets banned the whole family will be banned too.\r\n</div>\r\n\r\n<p class=\"quote right\"><q>That rabbit's got a vicious streak a mile wide!</q> ~ Tim the Enchanter, Monty Python and the Holy Grail.</p>\r\n\r\n<p class=\"clear\">If you need help ask one of the Wizards.</p>\r\n\r\n<img class=\"right\" src=\"images/hippy_house.png\" alt=\"Hippy_Dippy420's house\">\r\n\r\n<p>I am a real person and if you have any concerns about the game, players behaviour or technical issues either <code>/mail afflatus</code> in-game or leave a message on the <a href=\"https://forum.minetest.net/viewtopic.php?f=10&t=13127\">server forum</a>.</p>\r\n\r\n<h2> The Story so far ...</h2>\r\n<img class=\"right\" src=\"images/wizard_bus.png\" alt=\"The Wizard's Barge\">\r\n\r\n<p><b>Once</b> upon a time, which was no time at all, the Wizard Afflatus (who was the seventh son of a silversmith) set out on a journey of exploration. He had been told by a batty old wise woman that he was destined to build a fine temple and found a wealthy city.</p>\r\n\r\n<p>Having survived the most terrible storms at sea and overcome the scariest monsters imaginable (mostly by telling them really bad jokes), Afflatus landed in the new world. He placed his left foot upon Exo Beach and recited this song.</p>\r\n<p>Safely crossed is the fertile sea, <br />\r\nFertile be the fruit-strewn mountain, <br />\r\nFruit-strewn be the showery wood, <br />\r\nShowery be the river of water-falls, <br />\r\nOf water-falls be the lake of deep pools, <br />\r\nDeep pooled be the hill-top well, <br />\r\nA well of the tribe be our haven, <br />\r\nA haven of brambles I invoke,<br />\r\nA haven of safety.</p>\r\n\r\n<p>Using the power of magic, a hefty pick-axe and the assistance of a couple of bored stone-masons, Afflatus built a magnificent temple to the stars as the old woman had prophesied. And then when the last brick of the temple was securely in place, and not before, he built himself a house in the wilderness, with a very comfy bed; because quite frankly after all that he needed a decent kip.</p>\r\n\r\n<p class=\"quote right\"><q>None of them had any idea where the Holy Grail really was, and I don't think any of them actually expected to find it, or would have known what to do with it if he had run across it.</q> ~ Mark Twain, A Connecticut Yankee in King Arthur's Court.</p>\r\n\r\n<p>He awoke to the sounds of banging, digging and swearing. It was the sound of a valiant brave journeyman knight, known only as CCD, who had just hit his own thumb with a rather large hammer. It wasn't long before more adventurers and settlers with their attendant hangers-on arrived and the wilderness was cleared to make way for homes, a forge and a pub.</p>\r\n\r\n<p>In a short time Bramble Haven grew to become a magnificent, if rather small, city - with its own cathedral, a grandiose town hall and a town guard that kept its streets free of monsters at night. Powerful warlords built castles and temples and rustic villages sprang up in between. For a while peace reigned and the land was fruitful.</p>\r\n\r\n<p>Then the former colony of Bramble Haven was hit with earthquakes and freak weather conditions. No movement or building was possible for several months.  A few survivors took to the high seas in the not-particularly-good ship The Stella Marie across the Ocean of Erehwon, through the Land of Dreaming in search of pastures new, while the chief wizard, Afflatus, attempted to unfreeze the former city and stop talking about himself in the third person. </p>\r\n\r\n<p>Brandin got possessed by an angry water spirit that made him burn down a whole forest and several people's homes. Afflatus managed to drive the demon away and make Brandin wake up back in Bramble Haven, where he was wanted for arson. Sadly the inhospitable conditions drove all the inhabitants away and Bramble Haven soon became a ghost town.</p>\r\n\r\n<img class=\"right\" src=\"images/pagoda.png\" alt=\"Pagoda\">\r\n\r\n<p>Afflatus single-handedly completed the voyage to the Land of Dreaming in order to fix the time-space anomalies that had led to Bramble Haven's demise and to find a suitable location for a new settlement. One day, as he was out hunting, he thought he caught a glimpse of the magnificent questing beast and gave chase. All the privileges in the world were no match for this magnificent creature and he soon lost sight of his quarry, he is now hopelessly lost in the awesome and slightly creepy Land of Annwn.</p>\r\n\r\n<p>Due to a teleportantion accident, one of the new settlers spawned in a cave beneath a magnificent and strange rock formation where there grew a magical orange tree. Afflatus took this as a sign that this was the ideal location for the new settlement. </p>\r\n\r\n<p>More survivors from Bramble Haven, including the Knight formerly known as Sir CCD who had become a Duke, found the new colony and other new settlers joined. The new town soon grew large enough to need a Mayor and a Town Clerk and host a Miner's Guild and a Gardening Association. The Miners mined so deep that they angered a sleeping rock giant, who ripped apart the rock in his fury. Afflatus sought the assistance of the Wizards Who Live Upstream, who discovered that there was indeed a glitch in the Source. Armed with this knowledge, the gaps in the space-time continuum could be repaired and the town could go back to its peaceful routine. For now.</p>\r\n\r\n<p>What happens now is up to you, should you choose to accept this bizarre quest. There are no guarantees, but if you have enough skill and imagination, you may be able to help Afflatus rebuild. Normality will be restored just as soon as it stops being a statistical benchmark. You have been enchanted ... </p>\r\n\r\n<p><a href=\"http://grailtest.pathilorra.co.uk/playguide.html\">Player Guide</a><br />\r\n<a href=\"http://grailtest.pathilorra.co.uk/magic.html\">Secrets of the Magic System</a></p>\r\n\r\n<p class=\"clear\">&nbsp;</p>"
+    },
+    "pk": 15
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "My First Post",
+        "text": "Welcome to Maginaria",
+        "created_date": "2017-11-26T20:36:21Z",
+        "published_date": null
+    },
+    "pk": 1
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "Maginaria Rocks",
+        "text": "It certainly does wayhay!",
+        "created_date": "2017-11-26T20:36:30Z",
+        "published_date": "2017-11-26T20:36:50Z"
+    },
+    "pk": 2
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "Tribbles",
+        "text": "Troublesome little beasts",
+        "created_date": "2017-11-26T20:36:54Z",
+        "published_date": null
+    },
+    "pk": 3
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "rules",
+        "text": "There will be rules eventually",
+        "created_date": "2017-11-26T20:37:18Z",
+        "published_date": "2017-11-26T20:37:41Z"
+    },
+    "pk": 4
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "Woweee!!",
+        "text": "In computing, plain text is the data (e.g. file contents) that represent only characters of readable material but not its graphical representation nor other objects (images, etc.). It may also include a limited number of characters that control simple arrangement of text, such as line breaks or tabulation characters. Plain text is different from formatted text, where style information is included, and from \"binary files\" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).\r\nThe encoding has traditionally been either ASCII, sometimes EBCDIC. Unicode-based encodings such as UTF-8 and UTF-16 are gradually replacing the older ASCII derivatives limited to 7 or 8 bit codes.",
+        "created_date": "2017-11-26T23:47:38.433Z",
+        "published_date": "2017-11-26T23:47:38.441Z"
+    },
+    "pk": 5
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "Woweee",
+        "text": "In computing, plain text is the data (e.g. file contents) that represent only characters of readable material but not its graphical representation nor other objects (images, etc.). It may also include a limited number of characters that control simple arrangement of text, such as line breaks or tabulation characters. Plain text is different from formatted text, where style information is included, and from \"binary files\" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).\r\nThe encoding has traditionally been either ASCII, sometimes EBCDIC. Unicode-based encodings such as UTF-8 and UTF-16 are gradually replacing the older ASCII derivatives limited to 7 or 8 bit codes.",
+        "created_date": "2017-11-26T23:52:23.829Z",
+        "published_date": "2017-11-26T23:52:23.837Z"
+    },
+    "pk": 6
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "Woweee",
+        "text": "In computing, plain text is the data (e.g. file contents) that represent only characters of readable material but not its graphical representation nor other objects (images, etc.). It may also include a limited number of characters that control simple arrangement of text, such as line breaks or tabulation characters. Plain text is different from formatted text, where style information is included, and from \"binary files\" in which some portions must be interpreted as binary objects (encoded integers, real numbers, images, etc.).\r\nThe encoding has traditionally been either ASCII, sometimes EBCDIC. Unicode-based encodings such as UTF-8 and UTF-16 are gradually replacing the older ASCII derivatives limited to 7 or 8 bit codes.",
+        "created_date": "2017-11-26T23:53:08.194Z",
+        "published_date": "2017-11-26T23:53:08.201Z"
+    },
+    "pk": 7
+},
+{
+    "model": "blog.post",
+    "fields": {
+        "author": 1,
+        "title": "this works",
+        "text": "wonder why?",
+        "created_date": "2017-11-28T18:20:02.376Z",
+        "published_date": "2017-11-28T18:20:02.382Z"
+    },
+    "pk": 8
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-26T20:36:25.957Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "My First Post",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 1
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-26T20:36:52.718Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Maginaria Rocks",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 2
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-26T20:37:12.676Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Tribbles",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 3
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-26T20:37:43.167Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "rules",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 4
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T18:07:01.652Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Testrealm",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 5
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T21:14:55.050Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Glysatest",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 6
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T21:15:01.270Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Glysatest",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 7
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:50:16.907Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Fantasy Realm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 8
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:50:22.066Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Testrealm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 9
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:50:38.600Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Glys\u00e2",
+        "action_flag": 2,
+        "change_message": "Changed name."
+    },
+    "pk": 10
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:51:33.083Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "max",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 11
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:52:05.936Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "lyla",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 12
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:52:29.579Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Elohna",
+        "action_flag": 2,
+        "change_message": "Changed author."
+    },
+    "pk": 13
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T22:52:36.578Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Fluff princess",
+        "action_flag": 2,
+        "change_message": "Changed author."
+    },
+    "pk": 14
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-28T23:11:52.450Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Fluff Princess",
+        "action_flag": 2,
+        "change_message": "Changed name."
+    },
+    "pk": 15
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T17:44:25.616Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Players",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 16
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T17:45:57.082Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "max",
+        "action_flag": 2,
+        "change_message": "Changed first_name and groups."
+    },
+    "pk": 17
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T17:46:13.015Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "lyla",
+        "action_flag": 2,
+        "change_message": "Changed first_name and groups."
+    },
+    "pk": 18
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T20:56:43.693Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "4",
+        "object_repr": "mr_untest",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 19
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T20:56:59.623Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "test2",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 20
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T20:57:03.303Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "blah",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 21
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-29T20:57:07.041Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "realmy",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 22
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T15:15:29.305Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "glysa",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 23
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T15:15:33.426Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "Pathilorra",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 24
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T16:05:08.356Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "tim",
+        "action_flag": 2,
+        "change_message": "Changed first_name, groups and user_permissions."
+    },
+    "pk": 25
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T16:12:42.721Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 26
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T23:16:46.769Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "tim",
+        "action_flag": 2,
+        "change_message": "Changed user_permissions."
+    },
+    "pk": 27
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-11-30T23:46:09.450Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 28
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T15:53:37.469Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 1,
+        "change_message": ""
+    },
+    "pk": 29
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T17:08:02.453Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 2,
+        "change_message": "Changed banner, meta_map and wallpaper."
+    },
+    "pk": 30
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T17:18:05.171Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 2,
+        "change_message": "Changed banner, meta_map and wallpaper."
+    },
+    "pk": 31
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T17:55:36.520Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 2,
+        "change_message": "Changed wallpaper."
+    },
+    "pk": 32
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T18:01:36.674Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 2,
+        "change_message": "Changed meta_map."
+    },
+    "pk": 33
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T20:02:29.085Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "My Cool Realm",
+        "action_flag": 2,
+        "change_message": "Changed description."
+    },
+    "pk": 34
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T22:24:09.718Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Glys\u00e2",
+        "action_flag": 2,
+        "change_message": "Changed name, slug, description, rule_set, genre, tech_level, magic_level, banner and meta_map."
+    },
+    "pk": 35
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T22:27:14.642Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Glys\u00e2",
+        "action_flag": 2,
+        "change_message": "Changed tech_level and magic_level."
+    },
+    "pk": 36
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T22:48:53.607Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Glys\u00e2",
+        "action_flag": 2,
+        "change_message": "Changed description."
+    },
+    "pk": 37
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-01T23:17:54.758Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Glys\u00e2",
+        "action_flag": 2,
+        "change_message": "Changed description."
+    },
+    "pk": 38
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-03T16:13:45.110Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "testing",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 39
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-03T16:13:50.703Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "testing",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 40
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-03T16:13:56.213Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "testing",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 41
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-08T18:49:37.810Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "My very Cool Realm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 42
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-08T18:49:44.365Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "My very Cool Realm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 43
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-08T18:49:50.389Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "My very Cool Realm",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 44
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-13T20:56:46.124Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 45
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-13T20:56:50.871Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 46
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-13T20:56:55.605Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 47
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-13T20:57:00.071Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 48
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-13T20:57:05.855Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 49
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T17:52:03.585Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "Testland",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 50
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T17:52:35.403Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "9",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 51
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T17:52:42.789Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 52
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T17:52:48.431Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 53
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T17:52:55.588Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "8",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 54
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T21:14:22.538Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "10",
+        "object_repr": "Page object",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 55
+},
+{
+    "model": "admin.logentry",
+    "fields": {
+        "action_time": "2017-12-14T21:14:40.041Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "Test",
+        "action_flag": 3,
+        "change_message": ""
+    },
+    "pk": 56
+}
+]

@@ -1,0 +1,71 @@
+{% extends 'main.html' %}
+
+{% block content %}
+	<div id="realm_block">
+	{% for realm in realms %}
+        <div class="feature realm">
+        	<h2><a href="{% url 'realm_view' realm_slug=realm.realm_slug %}">{{ realm.name }}</a></h2>
+    	   {% if realm.brief_img %}
+           <img class="featured" src="/media/{{ realm.brief_img }}">
+           {% endif %}
+            {% if realm.rule_set %}<span class="bgold"><img class="mark" src="/static/icons/media-playlist-shuffle.svg">{{ realm.rule_set }}</span> {% endif %}
+            {% if realm.genre %} - {{ realm.genre | title }}{% endif %}
+            {% if realm.brief_text %}
+             <p>{{ realm.brief_text }}</p>
+        	{% endif %}
+            {% if realm.created_date %}
+            <div class="date">
+                <p>Created: {{ realm.created_date }}</p>
+            </div>
+        	{% endif %}
+    	</div>
+	{% endfor %}
+    <br />
+		<div class="feature">
+			<div id="new_realm">
+                <h2>Create a Portal to Your Realm</h2>
+			    <form method="POST">{% csrf_token %}
+        		    {{ new_realm.as_p }}
+        		    <div class="align_right"><button type="submit" class="save button">Create</button></div>
+    		    </form>
+            </div>
+        </div>
+        <div class="feature">
+            <div id="new_player">
+                <h2>Join Up as a Player</h2>
+			    <form method="POST">{% csrf_token %}
+        		    {{ new_player.as_p }}
+        		    <div class="align_right"><button type="submit" class="save button">Join Up</button></div>
+    		    </form>
+            </div>
+		</div>		
+
+	    <div class="feature">
+		    <h2><img class="mark" src="/static/icons/system-log-out.svg">A Portal to Your Realm</h2>
+		    <p>Featuring your world ...<br />
+		    Universe even ...<br />
+		    With wikis, forums and interactive maps <br />
+		    and a whole load of useful helper apps!</p>
+	    </div>
+
+	    <div class="feature">
+		    <h2><img class="mark" src="/static/icons/media-playlist-shuffle.svg">Role Playing Community</h2>
+		    <p>with lots of groovy players ...<br />
+		    Any system, any setting</p>
+	    </div>
+
+	    <div class="feature">
+		    <h2><img class="mark" src="/static/icons/applications-other.svg">Open Source</h2>
+		    <p>Character generation<br />
+		    Armed forces setup<br />
+		    Adventure tracker<br />
+		    Organise your campaign your way</p>
+	    </div>
+
+	    <div class="feature">
+		    <h2><img class="mark" src="/static/icons/preferences-desktop-theme.svg">Vibe Secure</h2>
+		    <p>strong and sensitive moderation<br />
+		    Keeping it fun for everyone.</p>
+	    </div>
+	</div>
+{% endblock %}

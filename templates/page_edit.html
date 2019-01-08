@@ -1,0 +1,18 @@
+{% extends 'editor.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div id="edit_block">
+        <form method="POST">{% csrf_token %}
+            <div class="align_right"><button type="submit" class="save button"><img class="mark" src="/static/icons/dialog-ok.svg">Save</button></div>
+            <p class="inline_block"><label for="id_name">Title:</label> {{ form.title }} <span class="helptext">Title</span></p>
+            <p class="inline_block"><label for="id_page_slug">URL Slug:</label> {{ form.page_slug }} <span class="helptext">Shorthand name for URLs. Must be lowercase with no spaces</span></p>
+            <p class="inline_block"><label for="id_realm_slug">Realm URL Slug:</label> {{ form.realm_slug }} <span class="helptext">Shorthand name for URLs. Must be lowercase with no spaces</span></p>
+            <hr />
+            <p>{{ form.description }}  <span class="helptext">You can use markdown or HTML to format this text.</span>
+            {{ form.media }} </p>
+            <div class="align_right"><button type="reset" class="reset button"><img class="mark" src="/static/icons/edit-undo.svg">Reset</button>{% if page.page_slug %}<a href="{% url 'page_delete' realm_slug=realm.realm_slug page_slug=page.page_slug %}"><button type="button" class="delete button"><img class="mark" src="/static/icons/gtk-no.svg">Delete</button></a>{% endif %}<button type="submit" class="save button"><img class="mark" src="/static/icons/dialog-ok.svg">Save</button></div>
+        </form>
+    </div>
+{% endblock %}

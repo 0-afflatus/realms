@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block content %}
+	<div id="login_block">
+		<div id="login_screen">
+            <h2>Log Out</h2>
+            <p>Logged out!</p>  
+
+            <a href="{% url 'login'%}">Click here to login again.</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'editor.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div id="edit_block">
+        <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+            <div class="align_right"><button type="submit" class="save button"><img class="mark" src="/static/icons/dialog-ok.svg">Save</button></div>
+            <p class="inline_block"><label for="id_name">Realm Name:</label> {{ form.name }} <span class="helptext">Your universe, milieu or game setting.</span></p>
+            <p class="inline_block"><label for="id_slug">URL Slug:</label> {{ form.realm_slug }} <span class="helptext">Shorthand name for URLs. Must be lowercase with no spaces</span></p>
+            <hr />
+            <p>{{ form.description }}  <span class="helptext">You can use markdown or HTML to format this text.</span>
+            {{ form.media }} </p>
+            <hr />
+            <p><label for="id_brief_text">Brief Text:</label> {{ form.brief_text }} <span class="helptext">Brief overview of the game for front page realm list.</span></p>
+            <p class="inline_block"><label for="id_rule_set">Rule set:</label> {{ form.rule_set }} <span class="helptext">D&amp;D, GURPS or your own custom rules.</span></p>
+            <p class="inline_block"><label for="id_genre">Genre:</label> {{ form.genre }} <span class="helptext">Genre</span></p>
+            <br />
+            <p class="inline_block"><label for="id_tech_level">Tech level:</label> {{ form.tech_level }} <span class="helptext">Technological level</span></p>
+            <p class="inline_block"><label for="id_magic_level">Magic level:</label> {{ form.magic_level }} <span class="helptext">Magical fantasy level</span></p>
+            <hr />
+            <p><label for="id_brief_ing">Featured Image:</label> {{ form.brief_img }} <span class="helptext">600*800 pixel map or landscape of your world.</span></p>
+            <p><label for="id_wallpaper">Wallpaper:</label> {{ form.wallpaper }} <span class="helptext">768*1024 pixel background image.</span></p>
+            <div class="align_right"><button type="reset" class="reset button"><img class="mark" src="/static/icons/edit-undo.svg">Reset</button><a href="{% url 'realm_delete' realm_slug=realm.realm_slug %}"><button type="button" class="delete button"><img class="mark" src="/static/icons/gtk-no.svg">Delete</button></a><button type="submit" class="save button"><img class="mark" src="/static/icons/dialog-ok.svg">Save</button></div>
+        </form>
+    </div>
+{% endblock %}

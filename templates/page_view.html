@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="view_sidebar">
+        <h1>{{ realm.name }}</h1>
+        <hr />
+        <p>{% if realm.rule_set %}<span class="bgold"><img class="mark" src="/static/icons/media-playlist-shuffle.svg">{{ realm.rule_set }}</span> {% endif %}
+        {% if realm.genre %} - {{ realm.genre | title }}{% endif %}</p>
+        <hr />        
+        <ul>
+        <li><a href="{% url 'realm_view' realm_slug=realm.realm_slug %}"><img class="premark" src="/static/icons/user-home.svg">Home</a></li>
+        {% for page in pages %}
+        <li><a href="{% url 'page_view' realm_slug=realm.realm_slug page_slug=page.page_slug %}">{{ page.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% if realm.author == user %}<a class="new button" href="{% url 'page_new' realm_slug=realm.realm_slug %}">+ New Page</a>{% endif %}
+        {% if page.author %}<p class="author">Creator: <span class="bgold">{{ page.author }}</span></p>{% endif %}
+        <hr />
+        {% if page.created_date %}<p class="date">Created: {{ page.created_date }}</p>{% endif %}        
+    </div>
+    <div class="body_text">
+        {% if realm.author == user %}<div class="align_right"><a class="edit button" href="{% url 'page_edit' realm_slug=page.realm_slug page_slug=page.page_slug %}">Edit</a></div>
+        {% endif %}
+        {% if page.description %}<p>{{ page.description|safe }}</p>{% endif %} 
+        {% if realm.author == user %}<div class="align_right"><a class="edit button" href="{% url 'page_edit' realm_slug=page.realm_slug page_slug=page.page_slug %}">Edit</a></div>
+        {% endif %}
+    </div>
+
+{% endblock %}
